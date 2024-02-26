@@ -27,5 +27,10 @@ namespace MyEvents
             }
             return false;
         }
+
+        public List<Event> GetActiveEvents()
+        {
+            return events.Where(e => e.IsActive).ToList();
+        }
     }
 }

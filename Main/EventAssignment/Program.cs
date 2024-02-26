@@ -8,42 +8,45 @@ namespace MyEvents
         {
             Console.WriteLine("Event Management System");
 
-            // Create an instance of EventManager
             EventManager manager = new EventManager();
 
-            // Create some sample events
-            Event codingWorkshop = new Event("Coding Workshop", "Workshop", 30);
-            Event techTalk = new Event("Tech Talk", "Seminar", 100);
+            Event codingWorkshop = new Event("Coding Workshop", "Workshop", 30, "Coding Skills", 200);
+            Event techTalk = new Event("Tech Talk", "Seminar", 100, "Tech Quiz", 100);
 
-            // Add events to the manager
             manager.AddEvent(codingWorkshop);
             manager.AddEvent(techTalk);
 
-            // Display all events
             Console.WriteLine("Upcoming Events:");
             DisplayEvent(codingWorkshop);
             DisplayEvent(techTalk);
 
-            // Simulate attendee registration
             Console.WriteLine("\nRegistering 1 attendee for the Coding Workshop...");
             bool registrationResult = codingWorkshop.RegisterAttendee();
             Console.WriteLine($"Registration successful: {registrationResult}");
-            DisplayEvent(codingWorkshop); // Show updated capacity
+            DisplayEvent(codingWorkshop);
 
-            // Simulate event cancellation
             Console.WriteLine("\nCancelling the Tech Talk...");
             bool cancellationResult = manager.CancelEvent("Tech Talk");
             Console.WriteLine($"Cancellation successful: {cancellationResult}");
-            DisplayEvent(techTalk); // Show updated status
+            DisplayEvent(techTalk);
 
-            // Keep the console window open until the user presses a key
+            Console.WriteLine("\nUpdating the prize for the Coding Workshop...");
+            codingWorkshop.UpdatePrize(250);
+            DisplayEvent(codingWorkshop);
+
+            Console.WriteLine("\nActive Events:");
+            foreach (var activeEvent in manager.GetActiveEvents())
+            {
+                DisplayEvent(activeEvent);
+            }
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadKey();
         }
 
         public static void DisplayEvent(Event evnt)
         {
-            Console.WriteLine($"Event: {evnt.Name}, Type: {evnt.Type}, Capacity: {evnt.Capacity}, Active: {evnt.IsActive}");
+            Console.WriteLine($"Event: {evnt.Name}, Type: {evnt.Type}, Capacity: {evnt.Capacity}, Active: {evnt.IsActive} Activity Name: {evnt.Activity_Name} Prize: {evnt.Prize}");
         }
     }
 }

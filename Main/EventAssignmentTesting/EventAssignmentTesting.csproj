@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="EventAssignmentTesting.csproj" />
+    <ProjectReference Include="..\EventAssignment\EventAssignment.csproj" />
   </ItemGroup>
 
 </Project>
