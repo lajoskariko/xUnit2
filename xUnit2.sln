@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{80F5EB83-F08E-4849-BE73-0F09FA725142}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAssignment", "Main\EventAssignment\EventAssignment.csproj", "{6489C67C-D6AF-4A56-A405-3D8332E74FB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventAssignmentTesting", "Main\EventAssignmentTesting\EventAssignmentTesting.csproj", "{19164053-0FDE-4319-9D59-ABFBF635DB4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6489C67C-D6AF-4A56-A405-3D8332E74FB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6489C67C-D6AF-4A56-A405-3D8332E74FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6489C67C-D6AF-4A56-A405-3D8332E74FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6489C67C-D6AF-4A56-A405-3D8332E74FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19164053-0FDE-4319-9D59-ABFBF635DB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19164053-0FDE-4319-9D59-ABFBF635DB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19164053-0FDE-4319-9D59-ABFBF635DB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19164053-0FDE-4319-9D59-ABFBF635DB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6489C67C-D6AF-4A56-A405-3D8332E74FB4} = {80F5EB83-F08E-4849-BE73-0F09FA725142}
+		{19164053-0FDE-4319-9D59-ABFBF635DB4F} = {80F5EB83-F08E-4849-BE73-0F09FA725142}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {554A2288-D87E-4F5E-A2F0-FB46EEEC321A}
+	EndGlobalSection
+EndGlobal
